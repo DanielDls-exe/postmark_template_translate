@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='postmark_template_translate',
-    version='0.1.0',
-    packages=find_packages(),
+    name='postmark-template-translate',
+    version='0.5.1',
+    packages=find_packages(include=['app', 'app.*']), 
     install_requires=[
         'postmarker',
         'beautifulsoup4',
@@ -15,11 +15,11 @@ setup(
         ],
     },
     author='Daniel Alvarado',
-    author_email='danieldls.ucv@gmail.com',
+    author_email='dani.alvarado@kirbic.com',
     description='A library to send Postmark templates with translated content',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/tu_usuario/postmark_template_translate',  # Reemplaza con la URL de tu repositorio
+    url='https://github.com/DanielDls-exe/postmark_template_translate',
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
@@ -27,3 +27,4 @@ setup(
     ],
     python_requires='>=3.6',
 )
+
