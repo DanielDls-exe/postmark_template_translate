@@ -13,7 +13,7 @@ class PostmarkService:
             return None
 
     def send_translated_email(self, template_id, model, language, from_email, to_email, message_stream):
-        from app.translate.translate import translate_html
+        from postmark_template_translate.translate.translate import translate_html
         
         html = self.get_template(template_id)
         if not html:
